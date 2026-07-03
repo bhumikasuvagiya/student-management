@@ -1,0 +1,5 @@
+<?php require 'config/db.php';
+if(isset($_GET['delete'])){$s=$pdo->prepare("DELETE FROM students WHERE id=?");$s->execute([$_GET['delete']]);header("Location:index.php");exit;}
+$rows=$pdo->query("SELECT * FROM students ORDER BY id DESC")->fetchAll();
+?><!doctype html><html><head><link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'></head><body class='container py-4'>
+<h2>Students</h2><a class='btn btn-primary' href='add.php'>Add</a><table class='table mt-3'><tr><th>ID</th><th>Name</th><th>Email</th><th>Course</th><th></th></tr><?php foreach($rows as $r){?><tr><td><?=$r['id']?></td><td><?=$r['name']?></td><td><?=$r['email']?></td><td><?=$r['course']?></td><td><a href='edit.php?id=<?=$r['id']?>'>Edit</a> | <a onclick="return confirm('Delete?')" href='?delete=<?=$r['id']?>'>Delete</a></td></tr><?php }?></table></body></html>
