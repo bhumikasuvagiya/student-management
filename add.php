@@ -5,6 +5,6 @@ if ($_POST) {
     header("Location:index.php");
 } ?>
 <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
-<div class='container py-4 test 123'>
+<div class='container py-4'>
     <form method='post'><input class='form-control mb-2' name='name' placeholder='Name'><input class='form-control mb-2' name='email'><input class='form-control mb-2' name='course'><button class='btn btn-success'>Save</button></form>
 </div>
