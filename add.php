@@ -6,6 +6,14 @@ if ($_POST) {
 } ?>
 <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>
 <div class='container py-4'>
+<<<<<<< HEAD
     <h2 class="">Login Form</h2>
+=======
+    <h1>Student Management</h1>
+
+<div>
+Dashboard theme Cards
+</div>
+>>>>>>> 16658f35b5dd9fefe600d6dd8085843ca47258c7
     <form method='post'><input class='form-control mb-2' name='name' placeholder='Name'><input class='form-control mb-2' name='email'><input class='form-control mb-2' name='course'><button class='btn btn-success'>Save</button></form>
 </div>
