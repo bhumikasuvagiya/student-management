@@ -27,7 +27,3 @@ This is a simple Student Management System developed using Core PHP, MySQL, PDO 
 3. Update database credentials in `config/database.php`
 4. Run:
    http://localhost/studentmanagement/
-
-## Author
-
-Rutika
